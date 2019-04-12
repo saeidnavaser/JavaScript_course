@@ -27,6 +27,7 @@ This is a practical learning curve of JavaScript.
 
   - [011- Functions](Chapter_03/011_Functions)
   - [012- IIFE and Scoping](Chapter_03/012_IIFE_and_scoping)
+  - [013- Objects](./Chapter_03/013_Objects)
 
 - **Chapter_04**
 
