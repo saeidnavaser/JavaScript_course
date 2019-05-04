@@ -450,53 +450,132 @@
     </style>
   </head>
   <body>
-    <h1 id="read-examples">READ EXAMPLES</h1>
+    <h1 id="switch-statement">SWITCH STATEMENT</h1>
+    <p>
+      A <code>Switch</code> statement start with a variable called the
+      <code>switch value</code>. Each case indicate a possible value for this
+      variable and the code that should run if the variable matches that value.
+    </p>
     <pre
       class="hljs"
-    ><code><div><span class="hljs-comment">// Ahmed write them Examples/c03/js/date-object-difference.js Program</span>
+    ><code><div><span class="hljs-keyword">switch</span> (level) {
+    <span class="hljs-keyword">case</span> <span class="hljs-string">'One'</span>:
+        title = <span class="hljs-string">'Level 1'</span>
+        <span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">case</span> <span class="hljs-string">'Two'</span>:
+        title = <span class="hljs-string">'Level 2'</span>
+        <span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">case</span> <span class="hljs-string">'Three'</span>:
+        title = <span class="hljs-string">'Level 3'</span>
+        <span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">default</span> <span class="hljs-string">''</span>:
+        title = <span class="hljs-string">'Test'</span>
+}
 </div></code></pre>
+    <h2 id="which-to-use-ifelse-or-switch">
+      WHICH TO USE (IF..ELSE) OR (SWITCH)
+    </h2>
+    <p>
+      When possible to use <code>switch</code> then use it, else use
+      <code>if...else</code>
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>if...else</th>
+          <th>switch</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            1- There is not need to provide an else option. (You can just use an
+            if statement)
+          </td>
+          <td>
+            You have a <code>default</code> option that is run if none of the
+            cases match.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            2- Witch a series of <code>if</code> statements, they are all
+            checked even if a match has been found (so it performs more slowly
+            than witch)
+          </td>
+          <td>
+            If match is found, that code is run. Then the break statement stops
+            the rest of the <code>switch</code> statement
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      example found in
+      <strong
+        ><a href="../Examples/c04/switch-statement.html"
+          >Examples/c04/switch-statement.html</a
+        ></strong
+      >
+    </p>
+    <p><strong>HTML</strong></p>
     <pre
       class="hljs"
-    ><code><div><span class="hljs-comment">// Ahmed write them Examples/c03/js/date-object-difference.js Program</span>
+    ><code><div><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>
+      JavaScript &amp;amp; jQuery - Chapter 4: Decisions &amp;amp; Loops - Switch
+      Statement
+    <span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"css/c04.css"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"page1"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Bullseye<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"images/teacher.png"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"teacher"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"teacher"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"answer"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"js/switch-statement.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </div></code></pre>
-    <h1 id="homeworks01">HOMEWORKS_01</h1>
-    <p>
-      By using functions, try to make the previous example of calculating
-      &quot;Basketball surface&quot; in to a generic calculation. Then use the
-      values of radius. Also make a nice function that show a message into HTML
-      that says
-    </p>
-    <ul>
-      <li>Radius of 5 cm2 is equal to &quot;This is a basketball&quot;</li>
-      <li>Radius of 6.86 cm2 is equal to &quot;This is a tennis ball&quot;</li>
-      <li>Radius of 4.3 cm2 is equal to &quot;This is a football&quot;</li>
-    </ul>
-    <p>
-      Note that showing the message should take parameters for radius and the
-      ball type and not sending hard coded message.
-    </p>
-    <h1 id="homeworks01">HOMEWORKS_02</h1>
-    <p>
-      By reading the following specification of &quot;HP Spectra 15.6 Inch&quot;
-      in the following link
-      https://www.amazon.de/HP-15-df0106ng-Touchscreen-Convertible-i7-8565U-Poseidon-Blue/dp/B07JKJFRK4/ref=sr_1_5?keywords=laptop+HP&amp;qid=1556965514&amp;refinements=p_89%3AHP%2Cp_n_feature_browse-bin%3A14725842031%2Cp_n_feature_thirteen_browse-bin%3A8321965031&amp;rnid=8321961031&amp;s=computers&amp;sr=1-5
-    </p>
-    <p>
-      Make a nice card showing the specification in a very elegant ways to
-      increase marketing of the product.
-    </p>
-    <p>
-      Also show us that in Saturday, 30th of May, the product price will be
-      1,797 Euro.
-    </p>
+    <p><strong>JavaScript</strong></p>
+    <pre
+      class="hljs"
+    ><code><div><span class="hljs-keyword">var</span> msg; <span class="hljs-comment">// Message</span>
+<span class="hljs-keyword">var</span> level = <span class="hljs-number">2</span>; <span class="hljs-comment">// Level</span>
+
+<span class="hljs-comment">// Determine message based on level</span>
+<span class="hljs-keyword">switch</span> (level) {
+  <span class="hljs-keyword">case</span> <span class="hljs-number">1</span>:
+    msg = <span class="hljs-string">"Good luck on the first test"</span>;
+    <span class="hljs-keyword">break</span>;
+
+  <span class="hljs-keyword">case</span> <span class="hljs-number">2</span>:
+    msg = <span class="hljs-string">"Second of three - keep going!"</span>;
+    <span class="hljs-keyword">break</span>;
+
+  <span class="hljs-keyword">case</span> <span class="hljs-number">3</span>:
+    msg = <span class="hljs-string">"Final round, almost there!"</span>;
+    <span class="hljs-keyword">break</span>;
+
+  <span class="hljs-keyword">default</span>:
+    msg = <span class="hljs-string">"Good luck!"</span>;
+    <span class="hljs-keyword">break</span>;
+}
+
+<span class="hljs-keyword">var</span> el = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"answer"</span>);
+el.textContent = msg;
+</div></code></pre>
     <div class="nav-container">
       <h3>Navigate to:</h3>
       <div class="navigation">
-        <a class="prev" href="../020_Math_object_and_date_object/Readme.html">
+        <a class="prev" href="../023_If_statements_and_if_else/Readme.html">
           Previous
         </a>
-        <a class="next" href="../../index.html">
-          Return to main menu
+        <a class="next" href="../025_Truthy_and_falsy/Readme.html">
+          Next
         </a>
       </div>
     </div>
