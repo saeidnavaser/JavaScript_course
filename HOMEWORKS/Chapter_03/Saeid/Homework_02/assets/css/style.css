@@ -1,0 +1,188 @@
+/* Start css*/
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif, fantasy;
+  background-color: #9c88ff;
+}
+/* title of page*/
+h1{
+  font-size: 20px;
+  text-align: center;
+  padding-top: 1%; 
+  color: white;
+}
+/* Here is our design for shopping cart*/
+.card {
+width: 95%;
+background-color: #f5f6fa;
+height: 600px;
+margin: 50px auto;
+
+}
+/* Start header */
+/* This is header of our shopping cart */
+.top_card{
+  height: 12%;
+  border-bottom: 1px solid #dcdde1;
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+
+}
+/* The social or sharing in header of our shopping cart */
+.social{
+  width: 20%;
+  margin-left: 2%;
+}
+.social i{
+  font-size: 25px;
+  padding: 10% 2%;
+  color: #bbbbbb;
+}
+.social i:hover{
+  color: #9c88ff;
+}
+/* The title of product and product code in header of our shopping cart */
+.title{
+  width: 60%; 
+  margin-left: 18%;
+}
+.title h3{
+  font-size: 17px;
+}
+.title span{
+  font-size: 14px;
+  color: #bbbbbb;
+  position: relative;
+  bottom: 10px;
+}
+/* The stars of customer reviews in header of our shopping cart */
+.stars{
+  width: 20%;
+  overflow: hidden;
+  text-align: end;
+  padding-right: 3%; 
+}
+.stars i{
+  font-size: 15px;
+  color: #fbc531;
+  margin-top: 13%;
+  margin-left: 2%;
+}
+.stars span{
+  font-size: 14px;
+  color: #bbbbbb;
+  position: relative;
+  bottom: 10px;
+}
+/* End header */
+
+/* Start content */
+/* This is content of our shopping cart */
+.mid_card{
+  height: 76%;
+  background-color: white;
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+.gallery{
+  width: 30%;
+  padding-left: 4%;
+  overflow: hidden;
+}
+.slid_gal img{
+  width: 70px;
+  height: 70px;
+  border: 1px solid #dcdde1;
+  padding: 5px;
+  position: relative;
+  bottom: 30px;
+  right: 5px;
+}
+.content{
+  width:49%; 
+  overflow: hidden;
+  margin-left: 5%;
+}
+.co_list{
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+}
+.co_list a{
+  text-decoration: none;
+}
+.co_list a span:hover
+{
+color: #9c88ff
+}
+.co_list span{
+  font-size: 13px;
+  color: #bbbbbb;
+}
+.co_content p{
+  font-size: 13px;
+  border: 1px solid #dcdde1;
+  padding: 5px;
+}
+.co_price span{
+  color: #9c88ff;
+}
+.co_price button{
+  color: white;
+  background-color: #9c88ff;
+  border: none;
+  outline: 0;
+  padding: 12px 30px;
+  position: relative;
+  bottom: 15px;
+}
+#new_price{
+  position: relative;
+  bottom: 4.8em;
+  left: 12em;
+  font-size: 13px;
+}
+.co_price button:hover{
+  opacity: 0.9;
+}
+.specification{
+  width: 20%;
+  overflow: hidden;
+  text-align: left;
+  margin: 3% auto; 
+  overflow: hidden;
+}
+table {
+  border-collapse: collapse;
+  margin-left: 20px;
+  margin-right: 20px;
+  
+}
+td, th {
+  border: 1px solid #dcdde1;
+  padding: 5px;
+}
+.first_td{
+  font-size: 12px;
+  background-color: #9c88ff;
+  color: white;
+}
+.second_td{
+  font-size: 12px;
+}
+/* End content */
+
+/* Start footer */
+/* This is footer of our shopping cart */
+.bot_card{
+  height: 12%;
+  border-top: 1px solid #dcdde1;
+}
+/* End footer */
