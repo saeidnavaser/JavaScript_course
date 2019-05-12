@@ -1,7 +1,28 @@
 var table = 3; // Unit of table
-var operator = "addition"; // Type of calculation
-var i = 1; // Set counter to 1
+var operator = "addition"; // Type of calculation by default.
+var i = 1; // Set counter to 1 or you can make it empty since it is assigned inside the drawOnHTML function
 var msg = ""; // Message
+var el = document.getElementById("blackboard"); // Make a cache for the HTML element that has id of "blackboard"
+
+function calculate(iteration, operation, table) {
+  let result = 0;
+  switch (operation) {
+    case "/":
+      result = (iteration / table).toFixed(2);
+      break;
+    case "-":
+      result = iteration - table;
+      break;
+    case "*":
+      result = iteration * table;
+      break;
+    default:
+      result = iteration + table;
+      break;
+  }
+
+  return result;
+}
 
 function render(op) {
   switch (op) {
@@ -20,37 +41,25 @@ function render(op) {
   drawOnHTML();
 }
 
-var el = document.getElementById("blackboard");
 function drawOnHTML() {
   i = 1;
   msg = "";
+
   while (i < 11) {
-    let result = 0;
-    if (operator === "/") {
-      result = eval(i + operator + table).toFixed(2);
-    } else {
-      result = eval(i + operator + table);
-    }
-    msg += i + " " + operator + " " + table + " = " + result + "<br />";
+    msg +=
+      i +
+      " " +
+      operator +
+      " " +
+      table +
+      " = " +
+      calculate(i, operator, table) +
+      "<br />";
     i++;
   }
-  el.innerHTML = msg;
+
+  el.innerHTML = msg; // By using the object of HTML element that we've cached, we can inject HTML into it.
 }
 
+// This is the first call since the function is not executed at first so we have to call it at the first time of page loading.
 render();
-
-// if (operator === "addition") {
-//   // Do addition
-//   while (i < 11) {
-//     msg += i + " + " + table + " = " + (i + table) + "<br />";
-//     i++;
-//   }
-// } else {
-//   // Do multiplication
-//   while (i < 11) {
-//     msg += i + " - " + table + " = " + (i - table) + "<br />";
-//     i++;
-//   }
-// }
-
-// Write the message into the page
