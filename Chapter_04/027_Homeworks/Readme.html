@@ -509,13 +509,15 @@
   msg = <span class="hljs-string">""</span>;
 
   <span class="hljs-keyword">while</span> (i &lt; <span class="hljs-number">11</span>) {
-    <span class="hljs-keyword">let</span> result = <span class="hljs-number">0</span>;
-    <span class="hljs-keyword">if</span> (operator === <span class="hljs-string">"/"</span>) {
-      result = calculate(i, operator, table).toFixed(<span class="hljs-number">2</span>);
-    } <span class="hljs-keyword">else</span> {
-      result = calculate(i, operator, table);
-    }
-    msg += i + <span class="hljs-string">" "</span> + operator + <span class="hljs-string">" "</span> + table + <span class="hljs-string">" = "</span> + result + <span class="hljs-string">"&lt;br /&gt;"</span>;
+    msg +=
+      i +
+      <span class="hljs-string">" "</span> +
+      operator +
+      <span class="hljs-string">" "</span> +
+      table +
+      <span class="hljs-string">" = "</span> +
+      calculate(i, operator, table) +
+      <span class="hljs-string">"&lt;br /&gt;"</span>;
     i++;
   }
 
