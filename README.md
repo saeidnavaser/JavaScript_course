@@ -2,20 +2,22 @@
 
 This is a practical learning curve of JavaScript.
 
-## Syllabus
+## Syllabus for strong basics of JavaScript
 
-- **Chapter_00**
+**_JavaScript-1_**
+
+- **Chapter_00 Introduction**
 
   - [001- Introduction](Chapter_00/001_Introduction)
   - [002- Environment](Chapter_00/002_Environment)
 
-- **Chapter_01**
+- **Chapter_01 ABC of programming**
 
   - [003- ABC of programming](Chapter_01/003_ABC_of_programming)
   - [004- How do computer understand real world](Chapter_01/004_How_do_computer_understand_real_world)
   - [005- How do I write script for a web page](Chapter_01/005_How_do_I_write_script_for_a_web_page)
 
-- **Chapter_02**
+- **Chapter_02 Basic JavaScript instruction**
 
   - [006- Basics of JavaScript instructions](Chapter_02/006_Basics_of_JavaScript_instructions)
   - [007- Variables](Chapter_02/007_Variables)
@@ -23,7 +25,7 @@ This is a practical learning curve of JavaScript.
   - [009- Expressions & Operators](Chapter_02/009_Expressions_&_operators)
   - [010- CH2 Examples](Chapter_02/010_CH2_Examples)
 
-- **Chapter_03**
+- **Chapter_03 Functions, Methods and Objects**
 
   - [011- Functions](Chapter_03/011_Functions)
   - [012- IIFE and Scoping](Chapter_03/012_IIFE_and_scoping)
@@ -35,9 +37,9 @@ This is a practical learning curve of JavaScript.
   - [018- Data types](Chapter_03/018_Data_types)
   - [019- Number global object](Chapter_03/019_Number_global_object)
   - [020- Math object and date object](Chapter_03/020_Math_object_and_date_object)
-  - [021 Examples](Chapter_03/021_Examples)
+  - [021- Examples](Chapter_03/021_Examples)
 
-- **Chapter_04**
+- **Chapter_04 => Decisions and Loops**
 
   - [022- decisions and loops](Chapter_04/022_decisions_and_loops)
   - [023- If statements and if else](Chapter_04/023_If_statements_and_if_else)
@@ -46,7 +48,7 @@ This is a practical learning curve of JavaScript.
   - [026- Loops](Chapter_04/026_Loops)
   - [027- Examples](Chapter_04/027_Examples)
 
-- **Chapter_05**
+* **Chapter_05 => Document Object Model (DOM)**
 
   - [028- DOM Tree web page model](Chapter_05/028_DOM_Tree_web_page_model)
   - [029- Accessing elements](Chapter_05/029_Accessing_elements)
@@ -59,27 +61,42 @@ This is a practical learning curve of JavaScript.
   - [036- examining the dom in chrome](Chapter_05/036_examining_the_dom_in_chrome)
   - [037- Examples](Chapter_05/037_Examples)
 
-- **Chapter_06**
+---
 
-  - [038_Events](Chapter_05/038_Events)
-  - [039_Binding_events](Chapter_05/039_Binding_events)
-  - [040_Event_flow](Chapter_05/040_Event_flow)
-  - [041_Event_object](Chapter_05/041_Event_object)
-  - [042_Event_delegation](Chapter_05/042_Event_delegation)
-  - [043_Different_types_of_events](Chapter_05/043_Different_types_of_events)
-  - [044_UI_events](Chapter_05/044_UI_events)
-  - [045_Mutation_events_and_observables](Chapter_05/045_Mutation_events_and_observables)
-  - [046_HTML5_events](Chapter_05/046_HTML5_events)
-  - [047_Example](Chapter_05/047_Example)
+**_JavaScript-2_**
 
-- **Chapter_08**
-  Ajax & JSON
+- **Chapter_06 => Events**
 
-- **Chapter_10**
-  Error Handling
+  - [038- Events](Chapter_05/038_Events)
+  - [039- Binding events](Chapter_05/039_Binding_events)
+  - [040- Event flow](Chapter_05/040_Event_flow)
+  - [041- Event object](Chapter_05/041_Event_object)
+  - [042- Event delegation](Chapter_05/042_Event_delegation)
+  - [043- Different types of events](Chapter_05/043_Different_types_of_events)
+  - [044- UI events](Chapter_05/044_UI_events)
+  - [045- Mutation events and observables](Chapter_05/045_Mutation_events_and_observables)
+  - [046- HTML5 events](Chapter_05/046_HTML5_events)
+  - [047- Example](Chapter_05/047_Example)
 
-- **Chapter_12**
-  Filtering, Searching, Sorting
+- **Chapter_08 => Ajax & JSON**
 
-- **Chapter_13** If there is time (Extra for practicing).
-  Form Enhancement and Validation.
+  - [048- AJAX and JSON](Chapter_05/048_AJAX_and_JSON)
+  - [049- Handling ajax requests and responses](Chapter_05/049_Handling_ajax_requests_and_responses)
+  - [050- Data formats](Chapter_05/050_Data_formats)
+  - [051- JSON](Chapter_05/051_JSON)
+  - [052- Fetching data](Chapter_05/052_Fetching_data)
+  - [053- Submitting data](Chapter_05/053_Submitting_data)
+  - [054- Examples](Chapter_05/054_Examples)
+
+- **Chapter_10 => Error Handling**
+
+  - [055- Error handling and debugging](Chapter_05/055_Error_handling_and_debugging)
+  - [056- Understanding errors](Chapter_05/056_Understanding_errors)
+  - [057- How to deal with errors](Chapter_05/057_How_to_deal_with_errors)
+  - [058- Handling exceptions](Chapter_05/058_Handling_exceptions)
+  - [059- Debugger keyword](Chapter_05/059_Debugger_keyword)
+  - [060- Examples](Chapter_05/Examples)
+
+- **Chapter_12 => Filtering, Searching, Sorting**
+
+- **Chapter_13 Form Enhancement and Validation**
