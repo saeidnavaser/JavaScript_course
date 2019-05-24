@@ -5,6 +5,7 @@ body {
   padding: 0;
   font-family: sans-serif, fantasy;
 }
+/* title of page */
 h1 {
   text-align: center;
   padding-top: 2%;
@@ -19,7 +20,7 @@ h1 {
   display: flex;
   justify-content: center;
 }
-
+/* this is cards style */
 .card {
   background-color: white;
   max-width: 310px;
