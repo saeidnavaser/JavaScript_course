@@ -10,7 +10,7 @@ const divOfContainerAndCard = () => {
   let cardOfContainer = document.createElement("div"); // div of container
   cardOfContainer.setAttribute("class", "container"); // class of container
 
-  // header of our shopping cart
+  // Start header of our shopping cart
   let headerOfCart = document.createElement("div"); // Create a div for Card
   headerOfCart.setAttribute("class", "header"); // Create attribute of class
 
@@ -40,8 +40,9 @@ const divOfContainerAndCard = () => {
     '<span><i class="fas fa-star"></i></span><br>' +
     "<span>3 customer reviews</span>";
   headerOfCart.appendChild(starsOfHeader);
+  // End of header
 
-  // main card of our shopping cart
+  // Start main card of our shopping cart
   let mainCardOfCart = document.createElement("div"); // div of main card
   mainCardOfCart.setAttribute("class", "main_card"); // class attribute
 
@@ -98,10 +99,12 @@ const divOfContainerAndCard = () => {
   tableOfMainCard.innerHTML +=
     '<table><tr><td class="first_td">Shipping </td><td class="second_td">Prime</td></tr><tr><td class="first_td">Sold By </td><td class="second_td">Amazon.de</td></tr><tr><td class="first_td">Computer Memory Size </td><td class="second_td">16 GB</td></tr><tr><td class="first_td">Processor (CPU) Model </td><td class="second_td">Core i7</td></tr><tr><td class="first_td">Processor (CPU)<br> Manufacturer </td><td class="second_td">Intel</td></tr><tr><td class="first_td">Display Size </td><td class="second_td">15.6 inches</td></tr><tr><td class="first_td">Graphics Description </td><td class="second_td">NVIDIA GeForce MX150</td></tr><tr><td class="first_td">Hard disk Description </td><td class="second_td">SSD</td></tr><tr><td class="first_td">Hard Disk Size </td><td class="second_td">512 GB</td></tr><tr><td class="first_td">Item Weight </td><td class="second_td">2.18 kg</td></tr><tr><td class="first_td">Operating System </td><td class="second_td">Windows 10 Home 64</td></tr></table>';
   mainCardOfCart.appendChild(tableOfMainCard);
+  // End of main
 
-  // footer of our shopping cart
+  // Start footer of our shopping cart
   let footerOfCart = document.createElement("div"); // Create a div for Card
   footerOfCart.setAttribute("class", "footer"); // Create attribute of class
+  // End footer
 
   cardOfContainer.appendChild(headerOfCart);
   cardOfContainer.appendChild(mainCardOfCart);
