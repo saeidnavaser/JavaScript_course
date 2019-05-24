@@ -4,7 +4,7 @@ textOfTitle = document.createTextNode("Cats of Chapter 04"); //text of title
 h1OfTitle.appendChild(textOfTitle);
 document.body.appendChild(h1OfTitle);
 
-// Array of cats
+// Array of Cats
 let Cats = [
   {
     breeds: [],
